@@ -4,7 +4,7 @@
 
 ![Image](VSCodeInstallationScreenShot.png)
 
-**Step 2**: Remotely connect to the provided server through your course specific CSE15L account. First, make sure that you have a way to use the Command-line Interface. If you are using a Mac, you can just use Terminal. If you are on Windows, download Git Bash, and access the terminal thorugh the VSCode application that you downloaded earlier. Once you have access to the Command-line, use the command 'ssh cs15lsp23zz@ieng6.ucsd.edu' except rather than 'zz', use your individual account numbers from your course specific CSE15L account.
+**Step 2**: Remotely connect to the provided server through your course specific CSE15L account. First, make sure that you have a way to use the Command-line Interface. If you are using a Mac, you can just use Terminal. If you are on Windows, download Git Bash, and access the terminal thorugh the VSCode application that you downloaded earlier. Once you have access to the Command-line, use the command 'ssh cs15lsp23zz@ieng6.ucsd.edu' except rather than 'zz', use your individual account numbers from your course specific CSE15L account. Enter your account password when prompted to, and you should gain access to the server.
 
 ![Image](RemoteServerConnectScreenShot.png)
 
