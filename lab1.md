@@ -1,4 +1,4 @@
-# CSE 15L Lab Report 1
+# Lab Report 1
 ## 4/10/2023
 **Step 1**: Install Visual Studio Code onto your computer. Go to the VSCode download page: [Link](https://code.visualstudio.com/Download). Depending on whichever operating system your computer uses, use the respective provided option to download VSCode onto your computer. 
 
