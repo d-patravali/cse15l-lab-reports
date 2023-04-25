@@ -11,3 +11,23 @@
 **Step3**: Run some commands. Once you have remote access to the server, practice using some of the commands you learned in class to carry out certain tasks like listing the contents of your current directory, changing your current directory, and accessing the contacts of your peers directories throughy the server (by using their individual course specific CSE15L account details).
 
 ![Image](TerminalCommands.png)
+## Revision: Adding Descriptions of Commands
+pwd: prints the working directory (reveals the path of the current directory). As seen at the top of the screenshot, the working directory was /home/linux/ieng6/cs15lsp23/cs15lsp23ex
+
+ls: lists the contents of the current directory, which was a file (hello.txt) and two directories (per15 and wavelet)
+
+cd wavelet: changes the working directory to wavelet
+
+cd ~ : returns to the home directory from wavelet
+
+mkdir testDirectory: creates a new directory within the working directory and names it "testDirectory"
+
+ls -lat : combines the commands ls -l, ls -a, and ls -t. "ls -l" displays the mode, number of links, owner, group, size, and time of last modification for each file. "ls-a" displays all files in the current directory including files that begin with "." and all the files in every subdirectory of the working directory. "ls -t" sorts each file by the modification time from latest to oldest modification time.
+
+ls -a : prints all the files in the current directory including files that begin with "." and all the files in every subdirectory of the working directory
+
+ls /home/linux/ieng6/cs15lsp23/cs15lsp23fb: lists the contents of another student's remote server home directory. Permission was denied.
+
+cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/ copies the file hello.txt (shown by its absolute path) to the home directory
+
+cat /home/linux/ieng6/cs15lsp23/public/hello.txt: prints the contents of the file hello.txt (the absolute path for the file was used)
