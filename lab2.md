@@ -8,7 +8,7 @@ Code for StringServer:
 Terminal Commands for running StringServer with port number 5000:
 ![Image](StringServerTerminal.png)
 
-First Request: "Hello"
+**First Request: "Hello"**
 ![Image](FirstString.png)
 
 Methods called: 
@@ -35,8 +35,8 @@ Values of relevent fields:
 Changes in relevent fields values (for this specific request):
 - private String result: ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"
 
-
-Second Request: "Hello \n How are you"
+<br>
+**Second Request: "Hello \n How are you"**
 ![Image](SecondString.png)
 
 Methods called (Same methods called as in the first request): 
@@ -66,26 +66,26 @@ Changes in relevant fields values (for this specific request):
 
 
 ## Part 2
-Bug chosen: Problem in the 'reversed' method of ArrayExamples.java
+**Bug chosen:** Problem in the 'reversed' method of ArrayExamples.java
 ![Image](buggyReversed.png)
 
-Failure-Inducing Input: {1, 2, 3, 4, 5}
+**Failure-Inducing Input:** {1, 2, 3, 4, 5}
 
       int[] input2 = {1, 2, 3, 4, 5};
       assertArrayEquals(new int[]{5, 4, 3, 2, 1}, ArrayExamples.reversed(input2));
 ^ The above Junit test compared an array {5, 4, 3, 2, 1} which was the expected value of the reversed array, to the actual reversed array, and the test returned false
 
 
-Input that doesn't induce a failure: { }  (an empty array)
+**Input that doesn't induce a failure:** { }  (an empty array)
 
       int[] input1 = { };
       assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ^ The above Junit test compared an empty array (the expected output) to the reversed input1 (another empty array), and the test returned true
 
-Symptom: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output {5, 4, 3, 2, 1}, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
+**Symptom**: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output {5, 4, 3, 2, 1}, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
 ![Image](failedTest.png)
 
-The bug (Before and After):
+**The bug (Before and After):**
 
 Before:
 
@@ -107,7 +107,7 @@ After:
          return newArray;
       }
   
-The fix: The issue was that in the old code, instead of iterating through the contents of the array and saving the reversed contents of the argument into a new array and returning it, they created a new empty array and saved the reversed contents of the new, empty array into the array that was passed as the argument to be reversed. Then they returned the array from the argument, which was then simply full of zeroes. My fix was to save the reversed elements of the old array into the new array I created, and then return the new array, which after the loop should contain the reversed contents of the array that was passed in the argument.
+**The fix:** The issue was that in the old code, instead of iterating through the contents of the array and saving the reversed contents of the argument into a new array and returning it, they created a new empty array and saved the reversed contents of the new, empty array into the array that was passed as the argument to be reversed. Then they returned the array from the argument, which was then simply full of zeroes. My fix was to save the reversed elements of the old array into the new array I created, and then return the new array, which after the loop should contain the reversed contents of the array that was passed in the argument.
 
 
 
