@@ -112,5 +112,5 @@ After:
 
 
 ## Part 3
-I learned how create my own local server which was very interesting.
+My favorite thing that I learned in the last two weeks of lab was how to create my own local server and handle the URLs that coorelate to the servers I made. Splitting up parts of the URL's and using them to carry out certain operations that are dependent on certain aspects of the paths and queries was very intersting to me, and I can't wait to see how I might apply these skills to working on servers that aren't just local. 
 
