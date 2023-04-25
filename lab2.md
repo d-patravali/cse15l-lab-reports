@@ -70,14 +70,16 @@ Bug chosen: Problem in the 'reversed' method of ArrayExamples.java
 ![Image](buggyReversed.png)
 
 Failure-Inducing Input: {1, 2, 3, 4, 5}
-    int[] input2 = {1, 2, 3, 4, 5};
-    assertArrayEquals(new int[]{5, 4, 3, 2, 1}, ArrayExamples.reversed(input2));
+
+      int[] input2 = {1, 2, 3, 4, 5};
+      assertArrayEquals(new int[]{5, 4, 3, 2, 1}, ArrayExamples.reversed(input2));
 ^ The above Junit test compared an array {5, 4, 3, 2, 1} which was the expected value of the reversed array, to the actual reversed array, and the test returned false
 
 
 Input that doesn't induce a failure: { }  (an empty array)
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+
+      int[] input1 = { };
+      assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ^ The above Junit test compared an empty array (the expected output) to the reversed input1 (another empty array), and the test returned true
 
 Didn't have time to show the symtom through screenshots, will fix in the lab resubmission, wanted to submit what I do have for feedback until then. 
