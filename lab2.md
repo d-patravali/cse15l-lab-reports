@@ -57,10 +57,10 @@ Relevant arguments (Same relevant arguments as in the first request):
    - args[0]: the element of the args array that contains the port number
 - 5000: the value of the port number that gets passed to te Server.start method to create the server
 
-Values of relevent fields:
+Values of relevant fields:
 - private String result: When we run this new request, result starts as "Hello" due to the previous request
 
-Changes in relevent fields values (for this specific request):
+Changes in relevant fields values (for this specific request):
 - private String result: ends up as "Hello \n How are you" once we carry out the new request. This displays "Hello" and "How are you" in two separate lines on the webpage. This change is important to note because it shows the important of concatenating the new value of s to result, because it still retains track of the previous value of s from the first request. This would not be the case if we just reassigned the value of result to the new value of s.
 
 
