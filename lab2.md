@@ -85,7 +85,7 @@ Didn't have time to show the symtom through screenshots, will fix in the lab res
 The bug (Before and After):
 
 Before:
-      '''Java
+
       static int[] reversed(int[] arr) {
          int[] newArray = new int[arr.length];
          for(int i = 0; i < arr.length; i += 1) {
@@ -93,9 +93,9 @@ Before:
          }
          return arr;
       }
-      '''
+      
 After:
-      '''Java
+
       static int[] reversed(int[] arr) {
          int[] newArray = new int[arr.length];
          for(int i = 0; i < arr.length; i += 1) {
@@ -103,7 +103,6 @@ After:
          }
          return newArray;
       }
-      '''
   
 The fix: The issue was that in the old code, instead of iterating through the contents of the array and saving the reversed contents of the argument into a new array and returning it, they created a new empty array and saved the reversed contents of the new, empty array into the array that was passed as the argument to be reversed. Then they returned the array from the argument, which was then simply full of zeroes. My fix was to save the reversed elements of the old array into the new array I created, and then return the new array, which after the loop should contain the reversed contents of the array that was passed in the argument.
 
