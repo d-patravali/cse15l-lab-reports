@@ -74,8 +74,7 @@ Input that doesn't induce a failure: { }  (an empty array)
    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ^ The above Junit test compared an empty array (the expected output) to the reversed input1 (another empty array), and the test returned true
 
-
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+Didn't have time to show the symtom through screenshots, will fix in the lab resubmission, wanted to submit what I do have for feedback until then. 
 
 The bug:
 
