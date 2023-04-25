@@ -10,4 +10,4 @@
 
 **Step3**: Run some commands. Once you have remote access to the server, practice using some of the commands you learned in class to carry out certain tasks like listing the contents of your current directory, changing your current directory, and accessing the contacts of your peers directories throughy the server (by using their individual course specific CSE15L account details).
 
-![Image](TerminalCommandsTestScreenShot.png)
+![Image](TerminalCommands.png)
