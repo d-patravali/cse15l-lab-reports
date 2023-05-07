@@ -75,29 +75,62 @@ Terminal Commands for running StringServer with port number 5000:
 **Second Request: "Hello \n How are you"**
 ![Image](SecondString.png)
 
-Methods called (Same methods called as in the first request): 
-- Integer.parseInt(args[0]): used to process the integer from the terminal to create a new server with the specified port number
-- Server.start(port, new Handler(): used to start the server given the port number and the handler
-- handleRequest(URI Url): took the server's URI link to carry out certain operations depending on the contents of the URI
-- url.getPath(): used to get the "path" portion of the URL (the part after the "/" character)
-- .equals("/add-message"): used to compare the URL path to the string "/add-message"
-- url.getQuery(): used to get the "query" portion of the URL (the part after the "?" character)
-- .split("="): splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
+**Methods called (Same methods called as in the first request):**
 
-Relevant arguments (Same relevant arguments as in the first request):
-- http://localhost5000: URI argument passed to handleRequest which is just the URL for the server that I created
-- "/add-message": String argument that gets compared to the path of the URL to decide whether to extract the string that follows the query
-- "=": String argument passed to the split method that splits the query into two String values that get stored to an array. This is so that we can isolate the value of String s in the query to display it on the webpage
-- "s": String argument passed to an equals method to ensure that we only deal with a substring that is declared to be String s in the query
-- String args[]: Array argument passed to the main method in the terminal. Important for our purposes because this array will contain the port number.
-   - args[0]: the element of the args array that contains the port number
-- 5000: the value of the port number that gets passed to te Server.start method to create the server
+      Integer.parseInt(args[0])
+- used to process the integer from the terminal to create a new server with the specified port number
 
-Values of relevant fields:
-- private String result: When we run this new request, result starts as "Hello" due to the previous request
+      Server.start(port, new Handler()
+- used to start the server given the port number and the handler
 
-Changes in relevant fields values (for this specific request):
-- private String result: ends up as "Hello \n How are you" once we carry out the new request. This displays "Hello" and "How are you" in two separate lines on the webpage. This change is important to note because it shows the important of concatenating the new value of s to result, because it still retains track of the previous value of s from the first request. This would not be the case if we just reassigned the value of result to the new value of s.
+      handleRequest(URI Url)
+- took the server's URI link to carry out certain operations depending on the contents of the URI
+
+      url.getPath()
+- used to get the "path" portion of the URL (the part after the "/" character)
+
+      .equals("/add-message")
+- used to compare the URL path to the string "/add-message"
+
+      url.getQuery()
+- used to get the "query" portion of the URL (the part after the "?" character)
+
+      .split("=")
+- splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
+
+
+**Relevant arguments (Same relevant arguments as in the first request):**
+
+      http://localhost5000
+- URI argument passed to handleRequest which is just the URL for the server that I created
+
+      "/add-message"
+- String argument that gets compared to the path of the URL to decide whether to extract the string that follows the query
+
+      "="
+- String argument passed to the split method that splits the query into two String values that get stored to an array. This is so that we can isolate the value of String s in the query to display it on the webpage
+
+      "s"
+- String argument passed to an equals method to ensure that we only deal with a substring that is declared to be String s in the query
+
+      String args[]
+- Array argument passed to the main method in the terminal. Important for our purposes because this array will contain the port number.
+
+      args[0]
+- the element of the args array that contains the port number
+
+      5000
+- the value of the port number that gets passed to te Server.start method to create the server
+
+**Values of relevant fields:**
+
+      private String result
+- When we run this new request, result starts as "Hello" due to the previous request
+
+**Changes in relevant fields values (for this specific request):**
+
+      private String result
+- Ends up as "Hello \n How are you" once we carry out the new request. This displays "Hello" and "How are you" in two separate lines on the webpage. This change is important to note because it shows the important of concatenating the new value of s to result, because it still retains track of the previous value of s from the first request. This would not be the case if we just reassigned the value of result to the new value of s.
 
 
 
