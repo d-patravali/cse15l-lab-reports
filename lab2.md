@@ -13,15 +13,26 @@ Terminal Commands for running StringServer with port number 5000:
 
 Methods called:
 
-      Integer.parseInt(args[0])
-   
+      Integer.parseInt(args[0]) 
 - used to process the integer from the terminal to create a new server with the specified port number
-- Server.start(port, new Handler(): used to start the server given the port number and the handler
-- handleRequest(URI Url): took the server's URI link to carry out certain operations depending on the contents of the URI
-- url.getPath(): used to get the "path" portion of the URL (the part after the "/" character)
-- .equals("/add-message"): used to compare the URL path to the string "/add-message"
-- url.getQuery(): used to get the "query" portion of the URL (the part after the "?" character)
-- .split("="): splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
+
+      Server.start(port, new Handler()
+- used to start the server given the port number and the handler
+
+      handleRequest(URI Url)
+- took the server's URI link to carry out certain operations depending on the contents of the URI
+
+      url.getPath()
+- used to get the "path" portion of the URL (the part after the "/" character)
+
+      .equals("/add-message")
+- used to compare the URL path to the string "/add-message"
+
+      url.getQuery()
+- used to get the "query" portion of the URL (the part after the "?" character)
+
+      .split("=")
+- splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
 
 Relevant arguments:
 - http://localhost5000: URI argument passed to handleRequest which is just the URL for the server that I created
