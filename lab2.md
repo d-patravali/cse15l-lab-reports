@@ -11,7 +11,8 @@ Terminal Commands for running StringServer with port number 5000:
 **First Request: "Hello"**
 ![Image](FirstString.png)
 
-Methods called:
+
+**Methods called:**
 
       Integer.parseInt(args[0]) 
 - used to process the integer from the terminal to create a new server with the specified port number
@@ -33,6 +34,7 @@ Methods called:
 
       .split("=")
 - splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
+
 
 **Relevant arguments:**
 
@@ -57,11 +59,17 @@ Methods called:
       5000
 - The value of the port number that gets passed to te Server.start method to create the server
 
-Values of relevent fields:
-- private String result: starts as ""
 
-Changes in relevent fields values (for this specific request):
-- private String result: ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"   
+**Values of relevent fields:**
+
+      private String result
+- Starts as ""
+
+**Changes in relevent fields values (for this specific request):**
+
+      private String result
+- Ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"   
+
 
 
 **Second Request: "Hello \n How are you"**
