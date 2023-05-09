@@ -35,7 +35,7 @@ Terminal Commands for running StringServer with port number 5000:
 - splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
 
 
-###Relevant arguments:
+### Relevant arguments:
 
       http://localhost5000
 - URI argument passed to handleRequest which is just the URL for the server that I created
