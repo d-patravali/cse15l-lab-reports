@@ -14,8 +14,7 @@ Terminal Commands for running StringServer with port number 5000:
 
 **Methods called:**
 
-      Integer.parseInt(args[0]) 
-- used to process the integer from the terminal to create a new server with the specified port number
+- `Integer.parseInt(args[0])` used to process the integer from the terminal to create a new server with the specified port number
 
       Server.start(port, new Handler()
 - used to start the server given the port number and the handler
