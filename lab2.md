@@ -90,7 +90,7 @@
       assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ^ The above Junit test compared an empty array (the expected output) to the reversed input1 (another empty array), and the test returned true
 
-**Symptom**: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output `{5, 4, 3, 2, 1}`, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
+**Symptom**Symptom: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output `{5, 4, 3, 2, 1}`, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
 ![Image](failedTest.png)
 
 ### The bug (Before and After):
