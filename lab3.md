@@ -5,7 +5,8 @@
 - `grep` is a command that searches for a certain String (pattern) in a group of files. There are several variations of this command which I will expand on in this lab. 
 
 ### Variation 1: `grep -i`
-This variation of `grep` searches for a pattern regardless of case (uppercase or lowercase). 
+#### This variation of `grep` searches for a pattern regardless of case (uppercase or lowercase). 
+
 **Example 1**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -i "right" rr74.txt
