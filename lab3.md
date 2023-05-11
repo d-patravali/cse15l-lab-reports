@@ -26,7 +26,7 @@ In this code block from the command line, I used `grep -i` again, which similarl
 Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
 
 ### Variation 2: `grep -v`
-This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
+#### This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
 
 **Example 1:**
 
@@ -191,5 +191,7 @@ Here is another example of `grep -v` being used. In this case, once again the `-
 Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
 
 ### Variation 3: `grep -n`
+#### Did not have time to do this variation, Planning on doing the same thing with the same format as I did for Variation 1 and 2. Would just like feedback on the work that I have completed so that I can submit a better project into the resubmission next week. 
 
 ### Variation 4: `grep -w`
+#### Did not have time to do this variation, Planning on doing the same thing with the same format as I did for Variation 1 and 2. Would just like feedback on the work that I have completed so that I can submit a better project into the resubmission next week. 
