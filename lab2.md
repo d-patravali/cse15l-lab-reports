@@ -74,7 +74,7 @@
 
 
 ## Part 2
-### Bug chosen: Problem in the 'reversed' method of ArrayExamples.java
+### Bug chosen: Problem in the `reversed` method of ArrayExamples.java
 ![Image](buggyReversed.png)
 
 **Failure-Inducing Input:** `{1, 2, 3, 4, 5}`
