@@ -90,7 +90,7 @@
       assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ^ The above Junit test compared an empty array (the expected output) to the reversed input1 (another empty array), and the test returned true
 
-**Symptom**Symptom: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output `{5, 4, 3, 2, 1}`, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
+**Symptom**: Below you can see that the Junit test passed for the test case that used the non-failure-inducing input (empty String), but flagged an error in the test case that tried to compare the expected output `{5, 4, 3, 2, 1}`, to the actual output. The error message shows that in the first index, where the tester expected an output value of 5, it actually got the value 0 in the actual output. 
 ![Image](failedTest.png)
 
 ### The bug (Before and After):
@@ -120,5 +120,5 @@
 
 
 ## Part 3
-My favorite thing that I learned in the last two weeks of lab was how to create my own local server and handle the URLs that coorelate to the servers I made. Splitting up parts of the URL's and using them to carry out certain operations that are dependent on certain aspects of the paths and queries was very intersting to me, and I can't wait to see how I might apply these skills to working on servers that aren't just local. 
+My favorite thing that I learned in the last two weeks of lab was how to create my own local server and handle the URLs that coorelate to the servers I made. Splitting up parts of the URL's and using them to carry out certain operations that are dependent on certain aspects of the paths and queries was very intersting to me, and I can't wait to see how I might apply these skills to working on other servers in the future.
 
