@@ -5,6 +5,7 @@
 - `grep` is a command that searches for a certain String (pattern) in a group of files. There are several variations of this command which I will expand on in this lab. 
 
 ### Variation 1: `grep -i`
+This variation of `grep` searches for a pattern regardless of case (uppercase or lowercase). 
 **Example 1**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -i "right" rr74.txt
@@ -21,8 +22,91 @@ In this code block from the command line, I used `grep -i` which retured all the
         In conclusion, the development of any complete, 
 In this code block from the command line, I used `grep -i` again, which similarly returned all the lines from gb-2003-4-9-r60.txt that contained the word "conclusion". Due to the `-i` moderator, it returned both "Conclusions" and "conclusion" because it recognized the pattern: conclusion, regardless of case. This example also shows another feature of grep, which is that it also returns lines in which the pattern was found within other words. "Conclusions" is not the same String as "conclusion" however, after disregarding case, the pattern "conclusion" was recognized within the word "Conclusions", and therefore it was recognized.
 
-### Variation 1: `grep -v`
+Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
 
-### Variation 1: `grep -n`
+### Variation 2: `grep -v`
+This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
+**Example 1**
 
-### Variation 1: `grep -w`
+    dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -v "a" rr166.txt
+
+  
+        Introduction
+        the fibrotic process [ 2 ] .
+        properties 
+        (TX)A 
+      
+      
+        
+          to 8.
+        
+        
+          2 , 6-keto-PGF 
+          2 , PGF 
+          2α , TXB 
+          vol/vol) for 6-keto-PGF 
+          2 . Then PGF 
+          2 , PGE 
+          ions m/z 569/573 for PGF 
+          2α , m/z 614/618 for TXB 
+        
+        
+          1% Tween 20, 10 mM phenylmethylsulphonyl fluoride,
+        
+        
+          overnight.
+        
+        
+        
+      
+      
+        Results
+        
+          ng/10 6cells/30 min, respectively; 
+          
+          2 ), PGF 
+          except TXB 
+          0.61 [0.21-1.64] ng/10 6cells/30 min with IL-1β
+          (results not shown).
+          HF-NL (0.61 [0.21-1.64] ng/10 6cells/30 min; 
+          different between the two cell groups (1.73 [0.77-2.53]
+          versus 0.75 [0.15-2.58] ng/10 6cells/30 min, in HF-IPF
+          1α :TXB 
+          P = 0.09 [Fig. 2]).
+        
+        
+          4).
+        
+      
+      
+        Discussion
+        2 , TXB 
+        2 to TXA 
+        2 :TXA 
+        [ 13 14 15 16 17 26 ] . TXA 
+        smooth muscle cells TXA 
+        c-fos , 
+        14 ] .
+        of PGI 
+        fibrogenesis.
+        2 to TXA 
+        in vivo .
+        
+        5 6 7 8 ] .
+        PGE 
+        2 production, but they further showed
+        2 production in response to TGFβ
+        Wilborn 
+        lungs of subjects with IPF.
+      
+      
+        Conclusion
+        2 :TXA 
+        of IPF.
+In this example, you can see the use of `grep -v`. What this command did in this example is return all the lines for which the pattern, "a", was NOT found. As you can see, none of the lines contain the lowercase letter "a". This is useful if you want to omit a certain pattern while conducting a search. 
+
+
+
+### Variation 3: `grep -n`
+
+### Variation 4: `grep -w`
