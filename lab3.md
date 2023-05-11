@@ -13,7 +13,7 @@
           Right ventricular pressure measurements
           flushed with cold PBS. The right lung was frozen for
         Mice deficient in iNOS do have a slight increase in right
-        = right ventricular systolic pressure.
+        = right ventricular systolic pressure.  
 
 
 In this code block from the command line, I used `grep -i` which retured all the lines from rr74.txt that contained the word "right". However, what the `-i` moderator did to the grep command was searched for all instances of the word "right" in rr74.txt REGARDLESS of case. That is why "Right" was included as well as "right".
@@ -22,7 +22,7 @@ In this code block from the command line, I used `grep -i` which retured all the
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -i "conclusion" gb-2003-4-9-r60.txt
         Conclusions
-        In conclusion, the development of any complete,
+        In conclusion, the development of any complete,     
 
 
 In this code block from the command line, I used `grep -i` again, which similarly returned all the lines from gb-2003-4-9-r60.txt that contained the word "conclusion". Due to the `-i` moderator, it returned both "Conclusions" and "conclusion" because it recognized the pattern: conclusion, regardless of case. This example also shows another feature of grep, which is that it also returns lines in which the pattern was found within other words. "Conclusions" is not the same String as "conclusion" however, after disregarding case, the pattern "conclusion" was recognized within the word "Conclusions", and therefore it was recognized.
@@ -108,7 +108,7 @@ Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-an
       
         Conclusion
         2 :TXA 
-        of IPF.
+        of IPF.     
 
 
 In this example, you can see the use of `grep -v`. What this command did in this example is return all the lines for which the pattern, "a", was NOT found. As you can see, none of the lines contain the lowercase letter "a". This is useful if you want to omit a certain pattern while conducting a search. 
@@ -190,7 +190,7 @@ In this example, you can see the use of `grep -v`. What this command did in this
       
       
         Conclusion
-        isoforms.
+        isoforms.       
 
 
 
