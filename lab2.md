@@ -39,7 +39,7 @@
 ### Changes in relevent fields values (for this specific request):**
 
 - `private String result`: Ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"   
-
+  
 
 ### Second Request: "Hello \n How are you"
 ![Image](SecondString.png)
