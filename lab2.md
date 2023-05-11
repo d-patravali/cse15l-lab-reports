@@ -36,7 +36,7 @@
 
 - `private String result`: Starts as ""
 
-#### Changes in relevent fields values (for this specific request):**
+#### Changes in relevent fields values (for this specific request):
 
 - `private String result`: Ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"  
 
