@@ -2,7 +2,7 @@
 ## 5/10/2023
 
 ## Command Chosen: `grep`
-`grep` is a command that searches for a certain String (pattern) in a group of files. There are several variations of this command which I will expand on in this lab. 
+- `grep` is a command that searches for a certain String (pattern) in a group of files. There are several variations of this command which I will expand on in this lab. 
 
 ### Variation 1: `grep -i`
 **Example 1**
