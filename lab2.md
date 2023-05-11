@@ -11,7 +11,7 @@
 ### First Request: "Hello"
 ![Image](FirstString.png)
 
-### Methods called:
+#### Methods called:
 
 - `Integer.parseInt(args[0])`: used to process the integer from the terminal to create a new server with the specified port number
 - `Server.start(port, new Handler()`: used to start the server given the port number and the handler
@@ -22,7 +22,7 @@
 - `.split("=")`: splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
 
 
-### Relevant arguments:
+#### Relevant arguments:
 
 - `http://localhost5000`: URI argument passed to handleRequest which is just the URL for the server that I created
 - `"/add-message"`: String argument that gets compared to the path of the URL to decide whether to extract the string that follows the query
@@ -32,11 +32,11 @@
 - `args[0]`: The element of the args array that contains the port number
 - `5000`: The value of the port number that gets passed to te Server.start method to create the server
 
-### Values of relevent fields:
+#### Values of relevent fields:
 
 - `private String result`: Starts as ""
 
-### Changes in relevent fields values (for this specific request):**
+#### Changes in relevent fields values (for this specific request):**
 
 - `private String result`: Ends up as "Hello" once we carry out the request, as the String s that we took from the query was "Hello"  
 
@@ -45,7 +45,7 @@
 ### Second Request: "Hello \n How are you"
 ![Image](SecondString.png)
 
-### Methods called (Same methods called as in the first request):
+#### Methods called (Same methods called as in the first request):
 
 - `Integer.parseInt(args[0])`: used to process the integer from the terminal to create a new server with the specified port number
 - `Server.start(port, new Handler()`: used to start the server given the port number and the handler
@@ -55,7 +55,7 @@
 - `url.getQuery()`: used to get the "query" portion of the URL (the part after the "?" character)
 - `.split("=")`: splits the query into two two values (one from either side of the "=" provided as the parameter). This is so that we can isolate the String that we want to print to the webpage
 
-### Relevant arguments (Same relevant arguments as in the first request):
+#### Relevant arguments (Same relevant arguments as in the first request):
 
 - `http://localhost5000`: URI argument passed to handleRequest which is just the URL for the server that I created
 - `"/add-message"`: String argument that gets compared to the path of the URL to decide whether to extract the string that follows the query
@@ -65,11 +65,11 @@
 - `args[0]`: the element of the args array that contains the port number
 - `5000`: the value of the port number that gets passed to te Server.start method to create the server
 
-### Values of relevant fields:
+#### Values of relevant fields:
 
 - `private String result`: When we run this new request, result starts as "Hello" due to the previous request
 
-### Changes in relevant fields values (for this specific request):
+#### Changes in relevant fields values (for this specific request):
 
 - `private String result`: Ends up as "Hello \n How are you" once we carry out the new request. This displays "Hello" and "How are you" in two separate lines on the webpage. This change is important to note because it shows the important of concatenating the new value of s to result, because it still retains track of the previous value of s from the first request. This would not be the case if we just reassigned the value of result to the new value of s.
 
