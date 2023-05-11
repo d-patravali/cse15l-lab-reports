@@ -27,6 +27,7 @@ Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-an
 
 ### Variation 2: `grep -v`
 This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
+
 **Example 1**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -v "a" rr166.txt
@@ -107,6 +108,86 @@ This variation of `grep` searches for all lines that DON'T contain the specified
 In this example, you can see the use of `grep -v`. What this command did in this example is return all the lines for which the pattern, "a", was NOT found. As you can see, none of the lines contain the lowercase letter "a". This is useful if you want to omit a certain pattern while conducting a search. 
 
 
+    dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -iv "e" rr196.txt
+
+  
+    
+      
+        Introduction
+        strips 
+      
+      
+        
+        
+        
+          Diaphragm strip physiology in vitro
+          L 
+          L 
+          o was 2.68 ± 0.09 cm in control
+          P = 0.001).
+          L 
+          P = 0.51).
+        
+        
+        
+        
+          MHC RT-PCR
+          PCR.
+          PCR amplification.
+          of 25 mM MgCl 
+          (Fig. 1).
+          runs.
+        
+        
+          with a rabbit anti-rat laminin primary antibody (Sigma,
+          antibody dilution of 1:50, an 18 hour incubation, and a
+        
+        
+        
+        
+          Statistical analysis
+        
+      
+      
+        
+          lung capacity (25 cmH 
+          n = 9; 
+          n = 9) and 25.3 ± 0.3 ml in
+          controls animals ( 
+          n = 10) ( 
+          P < 0.0001). Thus, H 
+          controls.
+        
+        
+          RT-PCR
+        
+        
+        
+        
+          P = 0.99).
+        
+        
+          In vitrostrip physiology
+          with a 
+        
+      
+      
+        Discussion
+        humans.
+        rats, Kanbara 
+        in situ hybridization that 1.0% of
+        29 ] .
+        difficult to draw any firm conclusions from comparisons
+        diaphragmatic function 
+        diaphragm strips.
+      
+      
+        Conclusion
+        isoforms.
+
+Here is another example of `grep -v` being used. In this case, once again the `-v` modifier ensured that all the lines from rr196.txt that DID NOT contain the pattern "e" were returned. What is interesting about this example, however, is that I demonstrated how modifiers can be used in conjunction with one another. By using `grep -iv`, I was able to return all the lines from rr196.txt that didn't contain the pattern "e" regardless of case. This means it ommitted lines with "E" (capitalized) as well.
+
+Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
 
 ### Variation 3: `grep -n`
 
