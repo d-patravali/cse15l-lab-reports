@@ -7,7 +7,7 @@
 ### Variation 1: `grep -i`
 #### This variation of `grep` searches for a pattern regardless of case (uppercase or lowercase). 
 
-**Example 1**
+**Example 1:**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -i "right" rr74.txt
           Right ventricular pressure measurements
@@ -16,7 +16,7 @@
         = right ventricular systolic pressure.
 In this code block from the command line, I used `grep -i` which retured all the lines from rr74.txt that contained the word "right". However, what the `-i` moderator did to the grep command was searched for all instances of the word "right" in rr74.txt REGARDLESS of case. That is why "Right" was included as well as "right".
 
-**Example 2**
+**Example 2:**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -i "conclusion" gb-2003-4-9-r60.txt
         Conclusions
@@ -28,7 +28,7 @@ Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-an
 ### Variation 2: `grep -v`
 This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
 
-**Example 1**
+**Example 1:**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -v "a" rr166.txt
 
@@ -107,6 +107,7 @@ This variation of `grep` searches for all lines that DON'T contain the specified
         of IPF.
 In this example, you can see the use of `grep -v`. What this command did in this example is return all the lines for which the pattern, "a", was NOT found. As you can see, none of the lines contain the lowercase letter "a". This is useful if you want to omit a certain pattern while conducting a search. 
 
+**Example 2:**
 
     dhruv.patravali@Dhruvs-MacBook-Air biomed % grep -iv "e" rr196.txt
 
