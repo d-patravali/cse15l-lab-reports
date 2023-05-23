@@ -15,14 +15,14 @@ Do not know how to do this step: when I write `javac ListExamples.java` the code
 ### Step 7: Edit the code file ListExamples.java to fix the failing test
 ![Image](CSE15LLab4Step7P1.png)
 In this part of step 7, I used the `vim ListExamples.java` command to open the ListExamples.java file in the built-in vim text editor.
-<down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>
-  - The <down> command moves the cursor down in normal mode
-  - The <right> command moves the cursor right in normal mode
-  - The <e> command moves the cursor to the end of the current word in normal mode
-  - The <i> command switches from normal to insert mode allowing me to edit the file
-  - The <delete> and <2> were just keys that I types to edit the file like a regular document or text file in any other text editor
-  - The <esc> command swithces back from insert to normal mode
-  - The <:wq> command saves the changes to the java file and exits vim
+Order of Commands Used: `<down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>`
+  - The `<down>` command moves the cursor down in normal mode
+  - The `<right>` command moves the cursor right in normal mode
+  - The `<e>` command moves the cursor to the end of the current word in normal mode
+  - The `<i>` command switches from normal to insert mode allowing me to edit the file
+  - The `<delete>` and `<2>` were just keys that I types to edit the file like a regular document or text file in any other text editor
+  - The `<esc>` command swithces back from insert to normal mode
+  - The `<:wq>` command saves the changes to the java file and exits vim
   *Need a screenshot of my commands, just didn't finish yet*
 
 ### Step 8: Run the tests, demonstrating that they now succeed
