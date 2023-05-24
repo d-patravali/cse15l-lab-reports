@@ -6,6 +6,7 @@
 
 ### Variation 1: `grep -i`
 #### This variation of `grep` searches for a pattern regardless of case (uppercase or lowercase). 
+This variation is useful because oftentimes, when searching for a pattern — such as a key word or key phrase — the case of the pattern is irrelevant for the purposes of the search. When all the user is trying to do is find every instance of the pattern, being able to use `grep -i` to ignore case allows the user to find all occurances of the pattern without missing instances due to case, or needing to run multiple `grep` commands of the same pattern with different case combinations. 
 
 **Example 1:**
 
@@ -30,7 +31,8 @@ In this code block from the command line, I used `grep -i` again, which similarl
 Source: [Grep Command in Linux - Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use).
 
 ### Variation 2: `grep -v`
-#### This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
+#### This variation of `grep` searches for all lines that DON'T contain the specified pattern.
+This variation is particularly useful when you want to omit a certain pattern from a search. For instance, if there is a particular term/phrase that is irrelevant to the content that you are searching for, it might be useful to narrow your search results by excluding all the lines that contain that particular term/phrase.
 
 **Example 1:**
 
