@@ -27,7 +27,7 @@ In this code block from the command line, I used `grep -i` which retured all the
 
 In this code block from the command line, I used `grep -i` again, which similarly returned all the lines from `gb-2003-4-9-r60.txt` that contained the word "conclusion". Due to the `-i` moderator, it returned both "Conclusions" and "conclusion" because it recognized the pattern: conclusion, regardless of case. This example also shows another feature of grep, which is that it also returns lines in which the pattern was found within other words. "Conclusions" is not the same String as "conclusion" however, after disregarding case, the pattern "conclusion" was recognized within the word "Conclusions", and therefore it was recognized.
 
-Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
+Source: [Grep Command in Linux - Usage, Options, and Syntax Examples]https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
 
 ### Variation 2: `grep -v`
 #### This variation of `grep` searches for all lines that DON'T contain the specified pattern. 
