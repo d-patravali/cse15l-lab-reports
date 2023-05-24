@@ -196,7 +196,7 @@ In this example, you can see the use of `grep -v`. What this command did in this
 
 Here is another example of `grep -v` being used. In this case, once again the `-v` modifier ensured that all the lines from `rr196.txt` that DID NOT contain the pattern "e" were returned. What is interesting about this example, however, is that I demonstrated how modifiers can be used in conjunction with one another. By using `grep -iv`, I was able to return all the lines from `rr196.txt` that didn't contain the pattern "e" regardless of case. This means it ommitted lines with "E" (capitalized) as well.
 
-Source: https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.
+Source: [Grep Command in Linux - Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use).
 
 ### Variation 3: `grep -n`
 #### Did not have time to do this variation, Planning on doing the same thing with the same format as I did for Variation 1 and 2. Would just like feedback on the work that I have completed so that I can submit a better project into the resubmission next week. 
