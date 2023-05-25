@@ -203,7 +203,7 @@ Source: [Grep Command in Linux - Usage, Options, and Syntax Examples](https://ww
 
 ### Variation 3: `grep -w`
 #### This `grep` variation returns only the occurences of the search pattern that match the search pattern exactly. 
-Normally, any occurence of the search pattern is returned by `grep`, even if this means that the pattern is contained in or attached to different words/numbers/characters. For instance, if you are searching for each occurance of just the number 7 in a file that contains tons of numbers, `grep 7` might not only return 7, but also 17, 875, 7792, etc. because those numbers also contain the number 7. However, they are not what you are trying to search for. This is when `grep -w` is useful, because it excludes all the occurances of your search patterns that are not an exact match. 
+Normally, any occurence of the search pattern is returned by `grep`, even if this means that the pattern is contained in or attached to different words/numbers/characters. For instance, if you are searching for each occurance of just the number 7 in a file that contains tons of numbers, `grep "7"` might not only return linew containing 7, but also 17, 875, 7792, etc. because those numbers also contain the number 7. However, they are not what you are trying to search for. This is when `grep -w` is useful, because it excludes all the occurances of your search patterns that are not an exact match. 
 
 **Example 1**
 
