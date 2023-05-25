@@ -201,7 +201,31 @@ Here is another example of `grep -v` being used. In this case, once again the `-
 Source: [Grep Command in Linux - Usage, Options, and Syntax Examples](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use).
 
 ### Variation 3: `grep -n`
-#### Did not have time to do this variation, Planning on doing the same thing with the same format as I did for Variation 1 and 2. Would just like feedback on the work that I have completed so that I can submit a better project into the resubmission next week. 
+#### This variation of `grep` returns not only the contents of each line that contains the search pattern, but also returns the line number of each returned line of text. 
+This variation is useful for when you want to not only find the contents of each occurence of a particular search pattern, but want to find the location of each instance of that search pattern. This is useful in several scenarios, one of the most prominent being when you need to edit lines of text that contain the given search pattern. `grep -n` makes it much easier to find the exact location of where these edits need to occur in the text file, and allows you to make these edits much more efficiently. 
+
+**Example 1:**
+
+    [cs15lsp23ex@ieng6-202]:biomed:238$ grep -n "method" 1471-2202-3-5.txt
+    47:        18 ] . This method has proved especially valuable in
+    86:        a method to eliminate nonlinear trends in the data, a
+    367:          bivariate method as shown in Figures 9, 10, both the
+    412:          method for monitoring 
+    654:        methods to ask whether the two 
+    728:        real-time methods (potentially including images of tissues)
+    867:        periodic by correlogram. This method is presented in detail
+    900:        method does not specify whether the difference is due to
+
+Above is an example of `grep -n` being used. In this case, the `grep -n` command was used to find the exact line numbers in which the word "method" occured in the file `1471-2202-3-5.txt`. The numbers on the left side of the command line output correspond to each line of texts that sits directly to its right, which makes it much easier to locate the occurances of the search pattern in the text file. 
+
+**Example 2**
+
+    [cs15lsp23ex@ieng6-202]:Alcohol_Problems:248$ grep -nw "14" Session2-PDF.txt
+    49:drinking as consumption of more than 14 drinks/week or more than 4
+    147:their clinical impressions.14-16 Stereotypic profiling may be the
+    469:14. Becker B, Woolard RH, Nirenberg TD, Minugh A, Longabaugh R,
+    
+Above is another example of `grep -n` being used but this time in conjunction with `grep -w`, which is why the command shown is `grep -nw`. This combination is particularly useful as it allows you to isolate specific, exact instances of the search pattern with their corresponding line number, all without the results being convoluted by lines that contain some variation of the search parameter (for example maybe 1495 instead of 14). This can be useful especially when writing or editting code, when you are trying to find very specific patterns in your code in order to make changes. Excluding patterns that aren't exactly the pattern that you are searching is more efficient, but more importantly, seeing the line number of each occurance of your specified pattern ensures that you not only know what edits need to be made, but you know exactly WHERE to make them. 
 
 ### Variation 4: `grep -w`
 #### Did not have time to do this variation, Planning on doing the same thing with the same format as I did for Variation 1 and 2. Would just like feedback on the work that I have completed so that I can submit a better project into the resubmission next week. 
