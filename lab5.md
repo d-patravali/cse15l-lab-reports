@@ -5,6 +5,7 @@
 ### Title: Trouble debugging a syntax error in my Bash Script
 #### Category: Debugging
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
+
 I am using a Mac, and I am editing my Bash Script with VSCode. I am also using VSCode's terminal to run my Bash Script
 
 
