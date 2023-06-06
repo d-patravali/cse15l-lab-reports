@@ -32,6 +32,14 @@ Thank you for your response, I tried using `grep -q` rather than just `grep` and
 ![Image](Lab5Fixed.png)
 ![Image](fixedOutput.png)
 
+## Information needed about the setup
 
+1. File and directory setup needed: For my Bash Script to work,`file1.txt`, `file2.txt`, and my corrected Bash Script, `Lab5FixedScript.sh` all need to be in the same directory. This is because I used the relative paths of the text files in my Bash Script, so they must be included in the same directory. This directory also MUST be the working directory when I run the Bash Script for the correct files to be accessed. 
+2. Contents of the Bash Script file before fixing the bug (no other file needed to be edited): ![Image](Lab5Buggy.png)
+3. Full command line I ran to trigger the bug: `bash Lab5BuggyScript.sh`   Note: did not need to navigate to the correct working directory, because in VSCode I was working in the correct directory already, but opening that directory as my project. 
+4. A description of what to edit to fix the bug: The fix that was required was using `grep -q` instead of `grep`, as the `-q` modifier silenced the unwanted output in the terminal. 
 
+## Part 2 - Reflection
+
+The most interesting thing that I learned in the second half of this quarter was how write Bash Scripts to debug and point out errors in code. This was something that we focused on heavily in Lab 6 in particular, and it was meant to emulate the way that the autograder debugs and grades out code. This was exciting because it showed us how to analyze and manipulate the code that we write in order to make sure that it satisfied our requirements, and as someone who is interested in being a TA for the CSE department in the future, it is a very useful and interesting skill to learn. 
 
