@@ -11,7 +11,7 @@ I am using a Mac, and I am editing my Bash Script with VSCode. I am also using V
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
 The symptom is that when I run the bash script, it works as intended except for the fact that it prints unwanted output as well.
-What the script is intended to do is iterate through each word in `file1.txt`, which contains several names of fruits. For each fruit that the script looks at in `file1.txt`, it checks if that fruit exists in `file2.txt`, which specifically contains berries. This is meant to check whether the fruit that is being looked at in `file1.txt` is a berry; if it is, it is supposed to print `"$fruit is a berry"`, where `$fruit` is a variable that references the fruit from `file1.txt` that is being looked at in the current for loop iteration. More specifically, the symptom is that for each iteration of the for loop that is included in my Bash Script, on top of the exptected output, the script prints the output of `grep "$fruit" file2.txt`, which prints the full line on which the word was found from `file2.txt`. I want to omit this `grep` output, and only print the intended output of `$fruit is aberry`. How can I do this, considering I cannot get rid of the grep command, as I need it to search for the desired word in `file2.txt`. Below is a screenshot of my bash Script as well as `file1.txt` and `file2.txt`.
+What the script is intended to do is iterate through each word in `file1.txt`, which contains several names of fruits. For each fruit that the script looks at in `file1.txt`, it checks if that fruit exists in `file2.txt`, which specifically contains berries. This is meant to check whether the fruit that is being looked at in `file1.txt` is a berry; if it is, it is supposed to print `"$fruit is a berry"`, where `$fruit` is a variable that references the fruit from `file1.txt` that is being looked at in the current for loop iteration. More specifically, the symptom is that for each iteration of the for loop that is included in my Bash Script, on top of the exptected output, the script prints the output of `grep "$fruit" file2.txt`, which prints the full line on which the word was found from `file2.txt`. I want to omit this `grep` output, and only print the intended output of `$fruit is aberry`. How can I do this, considering I cannot get rid of the grep command, as I need it to search for the desired word in `file2.txt`. Below is a screenshot of my bash Script as well as `file1.txt` and `file2.txt`. Lastly, I have attached a screenshot of the faulty output that is produced when I run this Bash Script in terminal
 
 ![Image](Lab5Buggy.png)
 ![Image](fruits.png)
@@ -22,6 +22,14 @@ What the script is intended to do is iterate through each word in `file1.txt`, w
 The failure inducing input in this case is a command that generates unwanted output to the terminal: `grep "$fruit" file2.txt`. The issue is that this command, which I need to use in order to carry out my desired operation of searching for a specified String in `file2.txt`, has an output itself; it prints the contents of the line(s) of `file2.txt` in which the String was found (only when it is found).
 
 
+## TA Response
+Hello, thank you for your question. I think I have a solution to your issue that will ensure that you can omit the unwanted output that you are experiencing. As you explained, the `grep` command does print the contents of the line on which the specified String is found in the specified file. However, there is a simple grep modifier that can fix your issue. Rather than using `grep` on its own, try using `grep -q`. The `-q` modifier is the *quiet* modifier, which will return the exit status of the command without producing the normal output. This means that for your purposes, by using this modifier, the `grep` command will still accomplish its task of searching for your specified string in `file2.txt`, but it will *not* produce the unwanted output that you are trying to get rid of in your terminal. Hope this helps.
+
+## Student Trying the TA Advice
+Thank you for your response, I tried using `grep -q` rather than just `grep` and got my desired output. Turns out the bug was simply not using the correct grep modifier, and using it in this situation ensured that my program ran as expected and produced the correct output in the terminal. Below are screenshots of my edited Bash Script and the terminal output that corresponds to it. 
+
+![Image](Lab5Fixed.png)
+![Image](fixedOutput.png)
 
 
 
