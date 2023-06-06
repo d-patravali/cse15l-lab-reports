@@ -11,12 +11,13 @@ I am using a Mac, and I am editing my Bash Script with VSCode. I am also using V
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
 The symptom is that when I run the bash script, it works as intended except for the fact that it prints unwanted output as well.
-What the script is intended to do is iterate through each word in `file1.txt`, which contains several names of fruits. For each fruit that the script looks at in `file1.txt`, it checks if that fruit exists in `file2.txt`, which specifically contains berries. This is meant to check whether the fruit that is being looked at in `file1.txt` is a berry; if it is, it is supposed to print `"$fruit is a berry"`, where `$fruit` is a variable that references the fruit from `file1.txt` that is being looked at in the current for loop iteration. More specifically, the symptom is that for each iteration of the for loop that is included in my Bash Script, on top of the exptected output, the script prints the output of `grep "$fruit" file2.txt`, which prints the full line on which the word was found from `file2.txt`. I want to omit this `grep` output, and only print the intended output of `$fruit is a berry`. How can I do this, considering I cannot get rid of the grep command, as I need it to search for the desired word in `file2.txt`. Below is a screenshot of my bash Script as well as `file1.txt` and `file2.txt`. Lastly, I have attached a screenshot of the faulty output that is produced when I run this Bash Script in terminal
+What the script is intended to do is first take the print output from my java file, and then save that output in `file2.txt`. Then, the Bash Script should iterate through each word in `file1.txt`, which contains several names of fruits. For each fruit that the script looks at in `file1.txt`, it checks if that fruit exists in `file2.txt`, which specifically contains berries from the java file. This is meant to check whether the fruit that is being looked at in `file1.txt` is a berry; if it is, it is supposed to print `"$fruit is a berry"`, where `$fruit` is a variable that references the fruit from `file1.txt` that is being looked at in the current for loop iteration. More specifically, the symptom is that for each iteration of the for loop that is included in my Bash Script, on top of the exptected output, the script prints the output of `grep "$fruit" file2.txt`, which prints the full line on which the word was found from `file2.txt`. I want to omit this `grep` output, and only print the intended output of `$fruit is a berry`. How can I do this, considering I cannot get rid of the grep command, as I need it to search for the desired word in `file2.txt`. Below are screenshots of my bash Script, `file1.txt`, `file2.txt`, and my java file. Lastly, I have attached a screenshot of the faulty output that is produced when I run this Bash Script in terminal
 
 ![Image](Lab5Buggy.png)
 ![Image](fruits.png)
 ![Image](berries.png)
-![Image](buggyOutput.png)
+![Image](MyBerriesJavaFile.png)
+![Image](correctBuggyScript.png)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
@@ -30,14 +31,19 @@ Hello, thank you for your question. I think I have a solution to your issue that
 Thank you for your response, I tried using `grep -q` rather than just `grep` and got my desired output. It is now clear that *the bug was simply not using the correct grep modifier to produce my desired output from the Bash Script*, and using `grep -q` it in this situation ensured that my program ran as expected and produced the correct output in the terminal. Below are screenshots of my edited Bash Script and the terminal output that corresponds to it. 
 
 ![Image](Lab5Fixed.png)
-![Image](fixedOutput.png)
+![Image](correctFixedScript.png)
 
 ## Information needed about the setup
 
-1. File and directory setup needed: For my Bash Script to work,`file1.txt`, `file2.txt`, and my corrected Bash Script, `Lab5FixedScript.sh` all need to be in the same directory. This is because I used the relative paths of the text files in my Bash Script, so they must be included in the same directory. This directory also MUST be the working directory when I run the Bash Script for the correct files to be accessed. 
-2. Contents of the Bash Script file before fixing the bug (no other file needed to be edited): ![Image](Lab5Buggy.png)
-3. Full command line I ran to trigger the bug: `bash Lab5BuggyScript.sh`   Note: did not need to navigate to the correct working directory, because in VSCode I was working in the correct directory already, but opening that directory as my project. 
-4. A description of what to edit to fix the bug: The fix that was required was using `grep -q` instead of `grep`, as the `-q` modifier silenced the unwanted output in the terminal. 
+- File and directory setup needed: For my Bash Script to work,`file1.txt`, `file2.txt`, my java file, and my corrected Bash Script, `Lab5FixedScript.sh` all need to be in the same directory. This is because I used the relative paths of the text files in my Bash Script, so they must be included in the same directory. This directory also MUST be the working directory when I run the Bash Script for the correct files to be accessed. 
+- Contents of the Bash Script file before fixing the bug (no other file needed to be edited): ![Image](Lab5Buggy.png)
+- Full command line commands I ran to trigger the bug (Note: did not need to navigate to the correct working directory, because in VSCode I was working in the correct directory already, but opening that directory as my project.):
+    
+      javac MyBerries.java
+      java MyBerries > file2.txt
+      bash Lab5FixedScript.sh
+
+- A description of what to edit to fix the bug: The fix that was required was using `grep -q` instead of `grep`, as the `-q` modifier silenced the unwanted output in the terminal. 
 
 ## Part 2 - Reflection
 
