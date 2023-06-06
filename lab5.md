@@ -16,6 +16,7 @@ What the script is intended to do is iterate through each word in `file1.txt`, w
 ![Image](Lab5Buggy.png)
 ![Image](fruits.png)
 ![Image](berries.png)
+![Image](buggyOutput.png)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
