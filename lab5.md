@@ -6,7 +6,7 @@
 ### Category: Debugging
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
-I am using a Mac, and I am editing my Bash Script with VSCode. I am also using VSCode's terminal to run my commands and Bash Script
+I am using a Mac (OS operating system), and I am editing my Bash Script with VSCode. I am also using VSCode's terminal to run my commands and Bash Script.
 
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
