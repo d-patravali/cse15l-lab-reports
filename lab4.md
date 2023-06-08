@@ -3,7 +3,7 @@
 
 ### Step 4: Log into ieng6
 ![Image](CSE15LLab4Step1.png)
-For this step, I used the below command to remotely connect to the ieng6 serve with my personalized account:
+For this step, I used the following command to remotely connect to the ieng6 serve with my personalized account:
     
     ssh cs15lsp23ex@ieng6.ucsd.edu
 
