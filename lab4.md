@@ -51,6 +51,7 @@ here is the order of key presses I used to make the correct edit to the file:
 
 ### Step 8: Run the tests, demonstrating that they now succeed
 ![Image](Lab5FixedTest.png)
+
 After correcting the `ListExamples.java` file, I re-ran the JUnit tests by using the `test.sh` bash script once again. `OK (2 Tests)` was printed to the terminal which showed that the tests were now succesful. Below is the command and key presses to run the tests.
 
     bash test.sh <return>
