@@ -3,7 +3,9 @@
 
 ### Step 4: Log into ieng6
 ![Image](CSE15LLab4Step1.png)
-For this step, I used the `ssh cs15lsp23ex@ieng6.ucsd.edu` command to remotely connect to the ieng6 server, with my personalized account.
+For this step, I used the below command to remotely connect to the ieng6 serve with my personalized account:
+    
+    ssh cs15lsp23ex@ieng6.ucsd.edu
 
 ### Step 5: Clone my fork of the lab7 directory
 ![Image](CSE15LLab4Step2.png)
