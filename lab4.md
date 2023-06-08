@@ -29,7 +29,10 @@ For this step, as shown in the code block below, I used a compile and run comman
 ## Step 7: Edit the code file ListExamples.java to fix the failing test
 ![Image](CSE15LLab4Step7P1.png)
 In this part of step 7, I used the `vim ListExamples.java` command to open the ListExamples.java file in the built-in vim text editor.
-Order of Commands Used: `<down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>`
+Below is the order of key presses I used: 
+    
+    <down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>
+
   - The `<down>` command moves the cursor down in normal mode
   - The `<right>` command moves the cursor right in normal mode
   - The `<e>` command moves the cursor to the end of the current word in normal mode
@@ -40,7 +43,11 @@ Order of Commands Used: `<down> <down> <right> <right> <e> <right> <i> <delete> 
   *Need a screenshot of my commands, just didn't finish yet*
 
 ### Step 8: Run the tests, demonstrating that they now succeed
-Similar to Step 6 issue: how do I show that it works now if I can't run it with `java ListExamples`?
+
 
 ### Step 9: Commit and push the resulting change to your Github account
-Did not finish, would just like feeback on whatever parts I was able to answer.
+I order to commit and push the resulting changes to my Github account, I used the following commands and key presses:
+
+     git add . <return>
+     git commit -m "edited file" <return>
+     git push <return>
