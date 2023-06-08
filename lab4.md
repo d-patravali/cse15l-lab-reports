@@ -14,9 +14,9 @@ For this step, I first clicked the copy button (shown in a screenshot below) at 
 
 ![Image](CopyKeyPressLab4.png)
 
-     git clone <ctrl v>
+     git clone <CTRL-V>
      <return>
-The `<ctrl v>` keypress pasted the HTTPS link into my terminal. The link was: `https://github.com/d-patravali/lab7.git`.
+The `<CTRL-V>` keypress pasted the HTTPS link into my terminal. The link was: `https://github.com/d-patravali/lab7.git`.
 
 ## Step 6: Run the tests, demonstrating that they fail
 Do not know how to do this step: when I write `javac ListExamples.java` the code compiles and file seems to work, how do I show that it doesn't? It says I can't run it with the `java ListExamples` command because there is no main method, which doesn't change once I make the correction in step 7.
