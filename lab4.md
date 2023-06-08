@@ -11,6 +11,7 @@ For this step, I used the following command to remotely connect to the ieng6 ser
 ### Step 5: Clone my fork of the lab7 directory
 ![Image](CSE15LLab4Step2.png)
 For this step, I first clicked the copy button (shown in a screenshot below) at the top right of the gitHub repository page to copy the HTTPS link of the repository to my clipboard. I chose the HTTPS link because it was accessible with a single button click. Then I used the following commands in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account.
+
 ![Image](CopyKeyPressLab4.png)
 
      git clone <ctrl v>
