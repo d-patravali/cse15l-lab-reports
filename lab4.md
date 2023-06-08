@@ -36,7 +36,7 @@ In this part of step 7, I used the following command to open the ListExamples.ja
 Then I editted the `ListExamplex.java` file using the commands shown below. The screenshot shows what the changed code looked like.
 ![Image](Lab5ChangedFile.png)
 
-here is the order of key presses I used to make the correct edit to the file: 
+Here is the order of key presses I used to make the correct edit to the file: 
     
     <down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>
 
