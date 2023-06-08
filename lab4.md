@@ -10,7 +10,7 @@ For this step, I used the following command to remotely connect to the ieng6 ser
 
 ## Step 5: Clone my fork of the lab7 directory
 ![Image](Lab5Step6.png)
-For this step, I first clicked the copy button (shown in a screenshot below) at the top right of the gitHub repository page to copy the HTTPS link of the repository to my clipboard. I chose the HTTPS link because it was accessible with a single button click. Then I used the following commands in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account. Then I changed directories to the new lab7 directory with `cd`.
+For this step, I first clicked the copy button (shown in a screenshot below) at the top right of the gitHub repository page to copy the HTTPS link of the repository to my clipboard. I chose the HTTPS link rather than an SSH key because it was accessible with a single button click, and it was a way to improve the time of my speedrun. Then I used the following commands in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account. Then I changed directories to the new lab7 directory with `cd`.
 
 ![Image](CopyHTTPSLab4.png)
 
@@ -57,10 +57,12 @@ After correcting the `ListExamples.java` file, I re-ran the JUnit tests by using
     bash test.sh <return>
 
 ### Step 9: Commit and push the resulting change to your Github account
-![Image](Lab5Git.png)
-![Image](Lab5GitPush.png)
-I order to commit and push the resulting changes to my Github account, I used the following commands and key presses:
+![Image](Lab5GitChanges.png)
+
+In order to commit and push the resulting changes to my Github account, I used the following commands and key presses:
 
      git add . <return>
      git commit -m "edited file" <return>
      git push <return>
+     
+My changes were successfully pushed to Github!
