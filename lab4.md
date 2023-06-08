@@ -1,14 +1,14 @@
 # Lab Report 4
 ## 5/22/2023
 
-### Step 4: Log into ieng6
+## Step 4: Log into ieng6
 ![Image](CSE15LLab4Step1.png)
 For this step, I used the following command to remotely connect to the ieng6 serve with my personalized account. (Note that the star keys represent my password characters):
     
     ssh cs15lsp23ex@ieng6.ucsd.edu <return>
     Password: *********** <enter>
 
-### Step 5: Clone my fork of the lab7 directory
+## Step 5: Clone my fork of the lab7 directory
 ![Image](CSE15LLab4Step2.png)
 For this step, I first clicked the copy button (shown in a screenshot below) at the top right of the gitHub repository page to copy the HTTPS link of the repository to my clipboard. I chose the HTTPS link because it was accessible with a single button click. Then I used the following commands in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account.
 
@@ -18,10 +18,10 @@ For this step, I first clicked the copy button (shown in a screenshot below) at 
      <return>
 The `<ctrl v>` keypress pasted the HTTPS link into my terminal. The link was: `https://github.com/d-patravali/lab7.git`.
 
-### Step 6: Run the tests, demonstrating that they fail
+## Step 6: Run the tests, demonstrating that they fail
 Do not know how to do this step: when I write `javac ListExamples.java` the code compiles and file seems to work, how do I show that it doesn't? It says I can't run it with the `java ListExamples` command because there is no main method, which doesn't change once I make the correction in step 7.
 
-### Step 7: Edit the code file ListExamples.java to fix the failing test
+## Step 7: Edit the code file ListExamples.java to fix the failing test
 ![Image](CSE15LLab4Step7P1.png)
 In this part of step 7, I used the `vim ListExamples.java` command to open the ListExamples.java file in the built-in vim text editor.
 Order of Commands Used: `<down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>`
