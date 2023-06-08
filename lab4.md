@@ -28,8 +28,12 @@ For this step, as shown in the code block below, I used a compile and run comman
 
 ## Step 7: Edit the code file ListExamples.java to fix the failing test
 ![Image](CSE15LLab4Step7P1.png)
-In this part of step 7, I used the `vim ListExamples.java` command to open the ListExamples.java file in the built-in vim text editor.
-Below is the order of key presses I used: 
+
+In this part of step 7, I used the following command to open the ListExamples.java file in the built-in vim text editor.
+   
+    vim ListExamples.java
+
+Below is the order of key presses I used to make the correct edit to the file: 
     
     <down> <down> <right> <right> <e> <right> <i> <delete> <2> <esc> <:wq>
 
