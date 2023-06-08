@@ -9,7 +9,9 @@ For this step, I used the following command to remotely connect to the ieng6 ser
 
 ### Step 5: Clone my fork of the lab7 directory
 ![Image](CSE15LLab4Step2.png)
-For this step, I used the `git clone https://github.com/d-patravali/lab7.git` command in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account.
+For this step, I used the following command in terminal to clone the lab7 directory, which I had previously forked in github. This created a new version of the lab7 directory in my ieng6 account.
+
+     git clone https://github.com/d-patravali/lab7.git
 
 ### Step 6: Run the tests, demonstrating that they fail
 Do not know how to do this step: when I write `javac ListExamples.java` the code compiles and file seems to work, how do I show that it doesn't? It says I can't run it with the `java ListExamples` command because there is no main method, which doesn't change once I make the correction in step 7.
