@@ -57,6 +57,8 @@ After correcting the `ListExamples.java` file, I re-ran the JUnit tests by using
     bash test.sh <return>
 
 ### Step 9: Commit and push the resulting change to your Github account
+![Image](Lab5Git.png)
+![Image](Lab5GitPush.png)
 I order to commit and push the resulting changes to my Github account, I used the following commands and key presses:
 
      git add . <return>
