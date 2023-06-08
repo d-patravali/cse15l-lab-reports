@@ -14,14 +14,20 @@ For this step, I first clicked the copy button (shown in a screenshot below) at 
 
 ![Image](CopyHTTPSLab4.png)
 
-     git clone <CTRL-V>
+     git clone <command-V>
      <return>
      cd lab7
      
-The `<CTRL-V>` keypress pasted the HTTPS link into my terminal. The link was: `https://github.com/d-patravali/lab7.git`.
+The `<command-V>` keypress pasted the HTTPS link into my terminal. The link was: `https://github.com/d-patravali/lab7.git`.
 
 ## Step 6: Run the tests, demonstrating that they fail
-Do not know how to do this step: when I write `javac ListExamples.java` the code compiles and file seems to work, how do I show that it doesn't? It says I can't run it with the `java ListExamples` command because there is no main method, which doesn't change once I make the correction in step 7.
+![Image](CSE15LLab4Step1.png)
+For this step, as shown in the code block below, I used a compile and run command specific to JUnit to run the required tests. Considering there are unreasonably long commands with complex characters, I used `<command-C>` to copy each command from the lab document, and `<command-V>` to copy each command to the command line. The lab document that i was copying from was open in the next browser window so I used `<control-Left>` and `<control-Left>` to alterante between terminal and the lab document page while copying and pasting these commands. The feedback stated `FAILURES!!!`, which demonstrates that the tests failed. Note: paired with each key press for `<command-C>` and `command-V` I used my mouse to highlight the commands in order to call the copy/paste commands on the right input.
+
+    <command-C> <control-Left>
+    <command-V> <return>
+    <command-C> <control-Left>
+    <command-V> <return>
 
 ## Step 7: Edit the code file ListExamples.java to fix the failing test
 ![Image](CSE15LLab4Step7P1.png)
