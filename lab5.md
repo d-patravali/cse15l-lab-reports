@@ -43,7 +43,7 @@ Thank you for your response, I tried using `grep -q` rather than just `grep` and
       java MyBerries > file2.txt
       bash Lab5BuggyScript.sh
 
-- A description of what to edit to fix the bug: The fix that was required was using `grep -q` instead of `grep`, as the `-q` modifier silenced the unwanted output in the terminal. 
+- A description of what to edit to fix the bug: The fix that was required was using `grep -q` instead of the standard `grep` command, as the `-q` modifier silenced the unwanted output in the terminal. 
 
 ## Part 2 - Reflection
 
