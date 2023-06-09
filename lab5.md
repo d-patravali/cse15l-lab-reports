@@ -20,7 +20,7 @@ The symptom is that when I run the bash script, it works as intended except for 
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
-The failure inducing input in this case is a command that generates unwanted output to the terminal: `grep "$fruit" file2.txt`. The issue is that this command, which I need to use in order to carry out my desired operation of searching for a specified String in `file2.txt`, has an output itself; it prints the contents of the line(s) of `file2.txt` in which the String was found (only when it is found).
+The failure inducing input in this case is not a value or argument that highlights a fault in the program; rather, it is a command that generates unexpected behavior (unwanted output to the terminal): `grep "$fruit" file2.txt`. The issue is that this command, which I need to use in order to carry out my desired operation of searching for a specified String in `file2.txt`, has an output itself; it prints the contents of the line(s) of `file2.txt` on which the String was found (only when it is found).
 
 
 ## TA Response
