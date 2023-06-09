@@ -37,7 +37,7 @@ Thank you for your response, I tried using `grep -q` rather than just `grep` and
 
 - File and directory setup needed: For my Bash Script to work,`file1.txt`, `file2.txt`, my java file (`MyBerries.java`), and my Bash Script, (first `Lab5BuggyScript.sh`, then `Lab5FixedScript.sh`) all need to be in the same directory. This is because I used the relative paths of the text files in my Bash Script, so they must be included in the same directory. This directory also MUST be the working directory when I run the Bash Script for the correct files to be accessed. 
 - Contents of the Bash Script file before fixing the bug (no other file needed to be edited): ![Image](Lab5Buggy.png)
-- Full command line commands I ran to trigger the bug (Note: did not need to navigate to the correct working directory, because in VSCode I was working in the correct directory already, but opening that directory as my project.):
+- Full command line commands I ran to trigger the bug (Note: did not need to navigate to the correct working directory, because in VSCode I was working in the correct directory already, by opening that directory as my project.):
     
       javac MyBerries.java
       java MyBerries > file2.txt
